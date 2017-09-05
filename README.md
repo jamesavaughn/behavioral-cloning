@@ -42,13 +42,13 @@ Using the Udacity provided simulator and my drive.py file, the car can be driven
 python drive.py model.h5
 ```
 
-####3. Submission code is usable and readable
+#### 3. Submission code is usable and readable
 
 The **model2.py** file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. An appropriate model architecture has been employed
+#### 1. An appropriate model architecture has been employed
 
 My model uses Nvidia's Self-Driving Car Model Architecture.
 
@@ -76,23 +76,23 @@ Data were preprocessed using the following steps:
 6. Added a correction factor to the measurements to balance over/under steering 
 
 
-####2. Attempts to reduce overfitting in the model
+#### 2. Attempts to reduce overfitting in the model
 
 I did not use dropout layers.  The model was trained and validated on different datasets to avoid overfitting (code line 76) and data was shuffled.  Model was tested by running the simulator in autonomous mode and ensuring that the vehicle could stay on the track.
 
 
-####3. Model parameter tuning
+#### 3. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually (model2.py line 75).
 
-####4. Appropriate training data
+#### 4. Appropriate training data
 
 Training data was chosen to keep the vehicle driving on the road. I drove the course 4 times, staying centered.  I drove a recovery course alternating recovering from the left and the right sides of the road.  
 
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Solution Design Approach
+#### 1. Solution Design Approach
 
 The overall strategy for deriving a model architecture was to ...
 
@@ -105,7 +105,7 @@ Then I researched the Nvida Cov Model and modified the LeNet architecture to mat
 I then adjusted the number of epochs and correction factor to fine tune the results.  After each training session, I ran the simulator in autonomous mode.
 
 
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
 The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
 * Layer 1: Convolutional Layer | 5x5 filter size, stride 2, relu nonlinearity activation
@@ -120,7 +120,7 @@ The final model architecture (model.py lines 18-24) consisted of a convolution n
 * Layer 9: Fully Connected Layer size 1
 
 
-####3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. 
 
